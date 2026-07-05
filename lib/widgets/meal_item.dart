@@ -31,7 +31,7 @@ class MealItem extends StatelessWidget {
     }
   }
 
-  String get affordabilityTest {
+  String get affordabilityText {
     switch (affordability) {
       case Affordability.affordable:
         return 'Affordable';
@@ -119,7 +119,7 @@ class MealItem extends StatelessWidget {
                     children: [
                       Icon(Icons.attach_money),
                       SizedBox(width: 6),
-                      Text(affordabilityTest),
+                      Text(affordabilityText),
                     ],
                   ),
                 ],

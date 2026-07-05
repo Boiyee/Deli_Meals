@@ -22,7 +22,10 @@ class _TabsScreenState extends State<TabsScreen> {
   void initState() {
     _pages = [
       {'page': CategoriesScreen(), 'title': 'Categories'},
-      {'page': FavoritesScreen(widget.favoriteMeals), 'title': 'Your Favorite'},
+      {
+        'page': FavoritesScreen(widget.favoriteMeals),
+        'title': 'Your Favorites',
+      },
     ];
     super.initState();
   }
